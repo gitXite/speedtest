@@ -9,8 +9,8 @@ def test_speed():
     st.get_servers(server_names)
     ping = st.results.ping
 
-    download_Mb = convert_bytes(download_speed)
-    upload_Mb = convert_bytes(upload_speed)
+    download_Mbs = convert_bytes(download_speed)
+    upload_Mbs = convert_bytes(upload_speed)
 
     return download_Mbs, upload_Mbs, ping
 
