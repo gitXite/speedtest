@@ -10,7 +10,7 @@ mail = Mail(app)
 def index():
     return render_template('index.html')
 
-@app.post('/')
+@app.get('/')
 def speed_test():
     return test_speed()
 
