@@ -10,10 +10,10 @@ mail = Mail(app)
 def index():
     return render_template('index.html')
 
-@app.get('/')
-def speed_test():
-    return test_speed()
+@app.get('/results')
+def get_results():
+    return render_template('results.html')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
