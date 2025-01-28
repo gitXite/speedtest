@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
-from speedtest.py import *
+from speedtest import *
 
 app = Flask(__name__)
 mail = Mail(app)
