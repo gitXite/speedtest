@@ -12,7 +12,7 @@ def test_speed():
     download_Mb = convert_bytes(download_speed)
     upload_Mb = convert_bytes(upload_speed)
 
-    return download_Mb, upload_Mb, ping
+    return download_Mbs, upload_Mbs, ping
 
 def convert_bytes(speed):
     Mbs = speed / 1000000
