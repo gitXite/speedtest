@@ -12,8 +12,7 @@ def index():
 
 @app.post('/')
 def speed_test():
-    results = test_speed()
-    return results
+    return test_speed()
 
 
 if __name__ == "__main__":
