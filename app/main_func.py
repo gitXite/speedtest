@@ -11,7 +11,6 @@ def test_speed():
 
     download_Mbs = convert_bytes(download_speed)
     upload_Mbs = convert_bytes(upload_speed)
-
     return download_Mbs, upload_Mbs, ping
 
 def convert_bytes(speed):
