@@ -10,9 +10,14 @@ mail = Mail(app)
 def index():
     return render_template('index.html')
 
+@app.route('/results')
+def results_page():
+    return render_template('results.html')
+
 @app.get('/results')
 def get_results():
-    return render_template('results.html')
+    download, upload, ping = test_speed()
+    return download, upload, ping
 
 
 if __name__ == '__main__':
