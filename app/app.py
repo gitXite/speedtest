@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request
-from flask_mail import Mail, Message
 from main_func import *
 
 app = Flask(__name__)
-mail = Mail(app)
 
 
 @app.route('/')
