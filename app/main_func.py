@@ -5,8 +5,6 @@ st = speedtest.Speedtest()
 def test_speed():
     download_speed = st.download()
     upload_speed = st.upload()
-    server_names = []
-    st.get_servers(server_names)
     ping = st.results.ping
 
     download_Mbs = convert_bytes(download_speed)
